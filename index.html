@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rhythm Game</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(100, 100, 100);
+        }
+
+        @font-face {
+            font-family: 'Masterpiece';
+            src: url('data/Masterpiece-Regular-48.vlw') format('truetype');
+        }
+    </style>
+</head>
+<body>
+
+<center>
+<table>
+    <thead valign="top">
+    <tr>
+        <td align="left"><canvas id="stats"></canvas></td>
+        <td align="centre"><canvas id="game"></canvas></td>
+        <td align="right"><canvas id="keybindings"></canvas></td>
+    </tr>
+    </thead>
+</table>
+</center>
+</body>
+
+<audio id="wrong-sound" src="sounds/fx/wrong.mp3"></audio>
+<audio id="song-1" src="sounds/songs/song1.mp3"></audio>
+
+<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+<script src="secrets.js"></script>
+<script src="game.js"></script>
+<script src="keybinding.js"></script>
+<script src="songs.js"></script>
+<script src="stats.js"></script>
+<script src="add-view-notes.js"></script>
+<script src="keys-and-binds.js"></script>
+<script src="Interfaces/MainMenu.js"></script>
+<script src="Interfaces/FreePlayMenu.js"></script>
+
+</html>
