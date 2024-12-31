@@ -1,0 +1,50 @@
+canvas {
+  transform: translateY(15px);
+  border: 5px solid white;
+  border-radius: 15px;
+  display: block;
+}
+
+canvas:hover {
+  transform: translateY(-0px);
+  display: block;
+
+  border: 5px solid #c4c4c4;
+  border-radius: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-flow {
+  background: linear-gradient(to bottom, rgb(75, 75, 75), rgb(25, 25, 25));
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('Images/game-controller-grey.png');
+  background-size: 13% 13%;
+  background-repeat: repeat;
+  background-position: 100% 0%;
+  animation: infinite-flow 50s linear infinite;
+}
+
+body {
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(75, 75, 75), rgb(25, 25, 25));
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes infinite-flow {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}

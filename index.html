@@ -3,22 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <title>Rhythm Game</title>
-
-    <style>
-        body {
-            text-align: center;
-            background-color: rgb(100, 100, 100);
-        }
-
-        @font-face {
-            font-family: 'Masterpiece';
-            src: url('data/Masterpiece-Regular-48.vlw') format('truetype');
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!--
+<div class="grid-container">
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+    <div class="image" style="background-image: url('https://scripterblox.github.io/game-controller.png');"></div>
+</div>
+-->
+
+<div class="image-flow"></div>
 
 <center>
+
 <table>
     <thead valign="top">
     <tr>
@@ -29,6 +190,7 @@
     </thead>
 </table>
 </center>
+
 </body>
 
 <audio id="wrong-sound" src="sounds/fx/wrong.mp3"></audio>
